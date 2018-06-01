@@ -1,0 +1,17 @@
+server:
+ port: 8089
+
+spring:
+ #DataSource Configuration
+ datasource:
+   url: jdbc:postgresql://localhost:5432/Aopdemo
+   username: postgres
+   password: 1234
+ #JPA Configuration
+ jpa:
+   hibernate:
+     naming:
+       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+     ddl-auto: update
+   show-sql: true 
+   database-platform: org.hibernate.dialect.PostgreSQLDialect
